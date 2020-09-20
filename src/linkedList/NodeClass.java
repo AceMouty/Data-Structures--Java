@@ -1,5 +1,5 @@
 
-package linkedLists;
+package linkedList;
 
 public class NodeClass
 {
