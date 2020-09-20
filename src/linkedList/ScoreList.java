@@ -1,4 +1,4 @@
-package linkedLists;
+package linkedList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ public class ScoreList
         head = headNode;
     }
 
-    // Add a new to the list
+    // Add a new node to the list
     public void appendNode(int nodeValue)
     {
         if(length < limit)
@@ -44,7 +44,6 @@ public class ScoreList
                 this.length = length+1;
             }
 
-            // this.length = length++;
         }
 
     }
@@ -65,6 +64,7 @@ public class ScoreList
         while(true)
         {
 
+            
             // Check if we are at the last node or not
             if(currNode.getNextNode() == null)
             {
@@ -78,8 +78,10 @@ public class ScoreList
             // Move current node to the next node
             currNode = currNode.getNextNode();
 
+
         }
 
+        // Either we have a single item in the scores list, or we have more than one item
         if(scores.size() > 1)
         {
             scores.sort((v1, v2) -> v2.compareTo(v1));
@@ -87,7 +89,8 @@ public class ScoreList
             {
                 System.out.println(score);
             }
-        } else 
+        } 
+        else 
         {
             System.out.println(scores.get(0));
         }

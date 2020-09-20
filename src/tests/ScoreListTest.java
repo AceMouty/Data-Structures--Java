@@ -1,8 +1,12 @@
 package tests;
 
 import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Test;
-import lists.*;
+import linkedList.*;
 
 public class ScoreListTest {
     @Test

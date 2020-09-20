@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# Ignore VS Code project setup
+.vscode
+
 # Log file
 *.log
 
