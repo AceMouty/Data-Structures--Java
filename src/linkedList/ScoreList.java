@@ -1,4 +1,4 @@
-package lists;
+package linkedLists;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,22 +49,35 @@ public class ScoreList
 
     }
 
-    // Print the linked list
+    // Print the linked list from greatest to least value
     public void print()
     {
         List<Integer> scores = new ArrayList<>();
         NodeClass currNode = this.head;
+
+        // Kill off if the list is empty
+        if(currNode == null)
+        {
+            return;
+        }
+
+        // Traverse the list and load node values into the array list
         while(true)
         {
 
-            scores.add(currNode.getNodeValue());
-            currNode = currNode.getNextNode();
+            // Check if we are at the last node or not
             if(currNode.getNextNode() == null)
             {
                 scores.add(currNode.getNodeValue());
                 break;
             }
-            
+
+            // Add current node value to the list
+            scores.add(currNode.getNodeValue());
+
+            // Move current node to the next node
+            currNode = currNode.getNextNode();
+
         }
 
         if(scores.size() > 1)
@@ -74,7 +87,10 @@ public class ScoreList
             {
                 System.out.println(score);
             }
-        } 
+        } else 
+        {
+            System.out.println(scores.get(0));
+        }
     }
 
     public NodeClass deleteNode(int value)
@@ -107,6 +123,7 @@ public class ScoreList
 
                 while(true)
                 {
+                    // If current node value is a match
                     if(currNode.getNodeValue() == value)
                     {
                         // point prevNode to the next node relative to the current node
@@ -119,8 +136,13 @@ public class ScoreList
                         return currNode;
                     } else
                     {
+                        // move prevNode to currentNode 
                         prevNode = currNode;
+
+                        // move currentNode to next node
                         currNode = currNode.getNextNode();
+
+                        // Check if we made it to the end of the list
                         if (currNode == null)
                         {
                             break;

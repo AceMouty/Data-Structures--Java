@@ -1,10 +1,10 @@
 
-package lists;
+package linkedLists;
 
 public class NodeClass
 {
-    private int value;
-    private NodeClass next; // 0x413269746123
+    private int value;       //     head       ->     2       ...
+    private NodeClass next; // 0x413269746123   0x41326674263 ...
 
     public NodeClass()
     {}
