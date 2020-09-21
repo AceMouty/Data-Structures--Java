@@ -1,5 +1,9 @@
 package list;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main
 {
     // Access modifiers
@@ -15,16 +19,21 @@ public class Main
 
 
     public static void main(String[] args) {
+
         LinkedList scores = new LinkedList();
-        scores.append(1);
-        scores.append(2);
-        scores.append(3);
-        scores.append(4);
-        scores.append(5);
-        scores.append(6);
-        scores.append(7);
+
+        List<Integer> highScores = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10,11));
+
+        for(int score: highScores)
+        {
+            scores.append(score);
+        }
+        
+        System.out.println("Current list size is: " + scores.getSize());
         scores.deleteNode(6);
         System.out.println("AFTER THE REMOVE");
-        scores.print();
+        System.out.println("Current list size is: " + scores.getSize());
+        scores.printList();
+        
     }
 }
