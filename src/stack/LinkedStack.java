@@ -3,6 +3,7 @@ package stack;
 public class LinkedStack 
 {
     private LinkedList stack;
+    private int size = 0;
 
     public LinkedStack()
     {
@@ -12,12 +13,19 @@ public class LinkedStack
     public void push(Employee newEmployee)
     {
         stack.appendNode(newEmployee);
+        this.size = this.size + 1;
     }
 
     public ListNode pop()
     {
-        ListNode oldNode = stack.pop();
-        return oldNode;
+        if(this.size > 0)
+        {
+            ListNode oldNode = stack.pop();
+            this.size = this.size - 1;
+            return oldNode;
+        }
+
+        return null;
     }
 
     public ListNode peek()
@@ -31,4 +39,8 @@ public class LinkedStack
         return stack.isEmpty();
     }
 
+    public int length()
+    {
+        return this.size;
+    }
 }
