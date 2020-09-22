@@ -28,4 +28,14 @@ public class Employee
         this.lName = lName;
     }
 
+
+    @Override
+    public String toString() {
+        return "{" +
+            " fName='" + getFName() + "'" +
+            ", lName='" + getLName() + "'" +
+            "}";
+    }
+
+
 }
