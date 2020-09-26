@@ -2,11 +2,14 @@
 *.class
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Ignore VS Code project setup
 .vscode
 
 >>>>>>> linked-lists/master
+=======
+>>>>>>> doubly-linked-list/master
 # Log file
 *.log
 
