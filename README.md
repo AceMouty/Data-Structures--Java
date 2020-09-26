@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Data-Structures--Java
 Common Data Structures implemented in Java
 =======
@@ -8,3 +9,6 @@ Common Data Structures implemented in Java
 =======
 # stack
 >>>>>>> stack/master
+=======
+# palindrome-checker
+>>>>>>> palindrome-checker/master

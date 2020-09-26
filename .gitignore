@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Ignore VS Code project setup
 .vscode
@@ -13,6 +14,8 @@
 >>>>>>> doubly-linked-list/master
 =======
 >>>>>>> stack/master
+=======
+>>>>>>> palindrome-checker/master
 # Log file
 *.log
 
