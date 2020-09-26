@@ -3,6 +3,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Ignore VS Code project setup
 .vscode
@@ -10,6 +11,8 @@
 >>>>>>> linked-lists/master
 =======
 >>>>>>> doubly-linked-list/master
+=======
+>>>>>>> stack/master
 # Log file
 *.log
 
