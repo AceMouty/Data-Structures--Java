@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Data-Structures--Java
 Common Data Structures implemented in Java
 =======
@@ -12,3 +13,6 @@ Common Data Structures implemented in Java
 =======
 # palindrome-checker
 >>>>>>> palindrome-checker/master
+=======
+# array-lists
+>>>>>>> array-lists/master

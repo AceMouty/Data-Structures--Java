@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Ignore VS Code project setup
 .vscode
@@ -16,6 +17,8 @@
 >>>>>>> stack/master
 =======
 >>>>>>> palindrome-checker/master
+=======
+>>>>>>> array-lists/master
 # Log file
 *.log
 
