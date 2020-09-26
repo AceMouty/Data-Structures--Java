@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+<<<<<<< HEAD
+=======
+# Ignore VS Code project setup
+.vscode
+
+>>>>>>> linked-lists/master
 # Log file
 *.log
 
